@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budgeting Game</h1>
+        <h2>Balance: $<span id="balance">1000</span></h2>
+        
+        <div class="expense">
+            <label>🏠 Rent: $<span id="rentAmount">0</span></label>
+            <input type="range" id="rent" min="0" max="800" step="50" value="0">
+        </div>
+
+        <div class="expense">
+            <label>🍔 Food: $<span id="foodAmount">0</span></label>
+            <input type="range" id="food" min="0" max="500" step="25" value="0">
+        </div>
+
+        <div class="expense">
+            <label>🎮 Entertainment: $<span id="entertainmentAmount">0</span></label>
+            <input type="range" id="entertainment" min="0" max="300" step="25" value="0">
+        </div>
+
+        <button onclick="calculateBudget()">Calculate Budget</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
